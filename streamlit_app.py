@@ -21,7 +21,7 @@ with st.sidebar:
     sex = st.radio("Sex", ["Female", "Male"])
     bmi = st.number_input("BMI", 15.0, 50.0, 25.0, 0.1)
     children = st.slider("Children", 0, 5, 0)
-    smoker = st.radio("Smoker", ["No", "Yes"])
+    smoker = st.radio("Smoker", ["Yes", "No"])
     region = st.selectbox("Region", ["northeast", "northwest", "southeast", "southwest"])
     
     # Convert inputs to model format
