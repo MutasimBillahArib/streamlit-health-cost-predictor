@@ -2,6 +2,11 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 
+st.set_page_config(
+    page_title="Medical Insurance Cost Predictor",
+    page_icon="💰"
+)
+
 # Load pre-trained model (cached for performance)
 @st.cache_resource
 def load_model():
